@@ -44,6 +44,7 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request)
     {
+        
         $validated = $request->validated();
         $validated['slug'] = Project::generateSlug($validated['title']);
 
