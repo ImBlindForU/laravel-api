@@ -25,7 +25,7 @@ class UpdateProjectRequest extends FormRequest
     {
         return [
             'type_id'=>'nullable',
-            'title' => 'unique:projects|max:150',
+            'title' => 'max:150',
             'content' => 'nullable',
             'cover_image' => 'nullable|max:520'
         ];
